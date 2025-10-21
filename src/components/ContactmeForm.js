@@ -5,21 +5,12 @@ function ContactmeForm() {
   function Emailsubmit(e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_xtgzfki",
-        "template_9ll93ma",
-        e.target,
-        "user_kh1diuAotFnI96MCgonLa"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(
+      "service_xtgzfki",
+      "template_9ll93ma",
+      e.target,
+      "user_kh1diuAotFnI96MCgonLa"
+    );
     e.target.reset();
     alert("Thank you for your message!");
   }
