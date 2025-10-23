@@ -3,12 +3,12 @@ import ReactMarkdown from "react-markdown";
 import Portrait from "../components/Portrait";
 import ProjectExamples from "../components/ProjectExamples";
 import ResumeModal from "../components/ResumeModal";
-import aboutthissite from "../components/markdowndocs/Aboutthiswebsite.md";
+import AboutThisSite from "../components/markdowndocs/Aboutthiswebsite.md";
 
 function HomePage() {
   const [aboutThisWebsiteContent, setaboutThisWebsiteContent] = useState("");
 
-  fetch(aboutthissite)
+  fetch(AboutThisSite)
     .then((response) => response.text())
     .then((text) => setaboutThisWebsiteContent(text))
     .catch((error) => console.error("Error fetching markdown:", error));
