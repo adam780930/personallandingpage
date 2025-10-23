@@ -1,4 +1,3 @@
-import classes from "./ProjectExamples.module.css";
 import reservation from "../materials/res.png";
 import recipe from "../materials/reci.png";
 import flashcard from "../materials/fla.png";
@@ -17,8 +16,8 @@ function projectExamples() {
       <div>React Projects</div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 border border-dark">
-            <div className={classes.item}>
+          <div class="col-lg-6 border border-dark btn-secondary">
+            <div role="button">
               <img
                 src={reservation}
                 alt=""
@@ -30,8 +29,8 @@ function projectExamples() {
               ></img>
             </div>
           </div>
-          <div class="col-lg-6 border border-dark">
-            <div className={classes.item}>
+          <div class="col-lg-6 border border-dark btn-secondary">
+            <div role="button">
               <img
                 src={flashcard}
                 alt=""
@@ -44,8 +43,8 @@ function projectExamples() {
             </div>
           </div>
           <div class="w-100"></div>
-          <div class="col-lg-6 border border-dark">
-            <div className={classes.item}>
+          <div class="col-lg-6 border border-dark btn-secondary">
+            <div role="button">
               <img
                 src={decoder}
                 alt=""
@@ -57,8 +56,8 @@ function projectExamples() {
               ></img>
             </div>
           </div>
-          <div class="col-lg-6 border border-dark">
-            <div className={classes.item}>
+          <div class="col-lg-6 border border-dark btn-secondary">
+            <div role="button">
               <img
                 src={recipe}
                 alt=""
