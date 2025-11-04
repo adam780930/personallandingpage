@@ -17,8 +17,8 @@ function ContactmeForm() {
 
   return (
     <section>
-      <header className={classes.title}>
-        <span>Contact me</span>
+      <header className="mt-5 text-center">
+        <span className="h1 px-2 py-2 border border-dark rounded bg-light">Contact me</span>
       </header>
       <form className={classes.form} onSubmit={Emailsubmit}>
         <div className={classes.control}>
