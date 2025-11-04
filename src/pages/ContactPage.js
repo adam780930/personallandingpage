@@ -1,5 +1,4 @@
 import ContactmeForm from "../components/ContactmeForm";
-import classes from "./ContactPage.module.css";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,15 +7,17 @@ function ContactPage() {
   return (
     <section>
       <ContactmeForm />
-      <div className={classes.iconContainer}>
+      <div className="w-50 text-left mx-auto fa-2xl">
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/adam780930"
+          role="button"
         >
           <FontAwesomeIcon
             icon={faGithub}
-            className={classes.github}
+            className="btn-secondary mr-2"
+            role="button"
           ></FontAwesomeIcon>
         </a>
 
@@ -27,7 +28,7 @@ function ContactPage() {
         >
           <FontAwesomeIcon
             icon={faLinkedin}
-            className={classes.linkedin}
+            className="btn-secondary"
           ></FontAwesomeIcon>
         </a>
       </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import experiences from "../components/markdowndocs/Experiences.md";
 import ReactMarkdown from "react-markdown";
 
-function ResumeModal({ linkOpen }) {
+function ContentButton({ linkOpen }) {
   const [experienceContent, setexperienceContent] = useState("");
 
   fetch(experiences)
@@ -61,4 +61,4 @@ function ResumeModal({ linkOpen }) {
   );
 }
 
-export default ResumeModal;
+export default ContentButton;
