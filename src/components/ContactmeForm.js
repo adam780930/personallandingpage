@@ -1,4 +1,3 @@
-import classes from "./ContactmeForm.module.css";
 import emailjs from "emailjs-com";
 
 function ContactmeForm() {
@@ -20,24 +19,24 @@ function ContactmeForm() {
       <header className="mt-5 text-center">
         <span className="h1 px-2 py-2 border border-dark rounded bg-light">Contact me</span>
       </header>
-      <form className={classes.form} onSubmit={Emailsubmit}>
-        <div className={classes.control}>
+      <form className="h1 w-50 mx-auto mt-5 px-2 py-2 border border-dark rounded bg-light" onSubmit={Emailsubmit}>
+        <div className="">
           <label htmlFor="name">Your Name</label>
           <input type="text" required id="name" name="name" />
         </div>
-        <div className={classes.control}>
+        <div className="">
           <label htmlFor="email">Your Email</label>
           <input type="email" required id="email" name="email" />
         </div>
-        <div className={classes.control}>
+        <div className="">
           <label htmlFor="subject">Subject</label>
           <input type="text" required id="subject" name="subject" />
         </div>
-        <div className={classes.control}>
+        <div className="">
           <label htmlFor="message">Message</label>
           <textarea id="message" required row="5" name="message"></textarea>
         </div>
-        <div className={classes.actions}>
+        <div className="">
           <button>Send Message</button>
         </div>
       </form>
