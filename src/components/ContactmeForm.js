@@ -1,4 +1,3 @@
-import classes from "./ContactmeForm.module.css";
 import emailjs from "emailjs-com";
 
 function ContactmeForm() {
@@ -17,27 +16,54 @@ function ContactmeForm() {
 
   return (
     <section>
-      <header className={classes.title}>
-        <span>Contact me</span>
-      </header>
-      <form className={classes.form} onSubmit={Emailsubmit}>
-        <div className={classes.control}>
+      <form
+        className="w-50 mx-auto mt-5 px-2 py-2 border border-dark rounded bg-light"
+        onSubmit={Emailsubmit}
+      >
+        <header className="my-2 text-center">
+          <span className="h1">Contact me</span>
+        </header>
+        <div className="form-group">
           <label htmlFor="name">Your Name</label>
-          <input type="text" required id="name" name="name" />
+          <input
+            type="text"
+            required
+            id="name"
+            name="name"
+            className="form-control"
+          />
         </div>
-        <div className={classes.control}>
+        <div className="form-group">
           <label htmlFor="email">Your Email</label>
-          <input type="email" required id="email" name="email" />
+          <input
+            type="email"
+            required
+            id="email"
+            name="email"
+            className="form-control"
+          />
         </div>
-        <div className={classes.control}>
+        <div className="form-group">
           <label htmlFor="subject">Subject</label>
-          <input type="text" required id="subject" name="subject" />
+          <input
+            type="text"
+            required
+            id="subject"
+            name="subject"
+            className="form-control"
+          />
         </div>
-        <div className={classes.control}>
+        <div className="form-group">
           <label htmlFor="message">Message</label>
-          <textarea id="message" required row="5" name="message"></textarea>
+          <textarea
+            id="message"
+            required
+            row="5"
+            name="message"
+            className="form-control"
+          ></textarea>
         </div>
-        <div className={classes.actions}>
+        <div className="d-grid gap-2 d-md-flex justify-content-md-center">
           <button>Send Message</button>
         </div>
       </form>
