@@ -31,6 +31,17 @@ function ContactPage() {
             className="btn-secondary"
           ></FontAwesomeIcon>
         </a>
+
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/adam-yilin-tsai"
+        >
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className={classes.linkedin}
+          ></FontAwesomeIcon>
+        </a>
       </div>
     </section>
   );
